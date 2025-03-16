@@ -1,10 +1,10 @@
-# Proyecto: Platanal. Agente Computacional para Detección de Roya en Café
+# Proyecto: Platanal. Agente Computacional para Detección de Sigatoka Negra en el plátano
 
-Proyecto final para la materia de Conceptos Avanzados de Inteligencia Artificial (AY114).
+Proyecto final para la materia de Conceptos Avanzados de Inteligencia Artificial (AY114) de la Maestría en Inteligencia Artificial y Ciencia de Datos.
 
 ## 📌 Idea Principal
 
-El objetivo de este proyecto es desarrollar un agente computacional en Python (aunque se evaluará si sigue siendo la mejor opción en el futuro) que permita identificar la roya en los arbustos de café de una plantación colombiana. Se entrenará el modelo con técnicas de visión por computador y deep learning o aprendizaje supervisado **(PREGUNTAR EN CLASE)**.
+El objetivo de este proyecto es desarrollar un agente computacional en Python (aunque se evaluará si sigue siendo la mejor opción en el futuro) que permita identificar la Sigatoka Negra en los platanales colombianos (y posiblemente del mundo). Se entrenará el modelo mediante el uso de redes neuronales profundas para el procesamiento de imágenes.
 
 La aplicación inicial será una interfaz gráfica que permita al usuario:
 
@@ -13,11 +13,11 @@ La aplicación inicial será una interfaz gráfica que permita al usuario:
 
 ## 🎓 Proyección hacia el Proyecto de Grado de la Maestría
 
-Si el agente funciona correctamente, podría presentarse como proyecto de grado. Si se requiere mayor complejidad, se integrará en un dron autónomo que recorrerá la plantación, generando un mapa de infección para ayudar a los agricultores a tomar decisiones.
+Si el agente funciona correctamente, podría presentarse como proyecto de grado. Si se requiere mayor complejidad, se integrará en un dron autónomo que recorrerá la plantación, generando un mapa de calor o geoespacial para ayudar a los agricultores a tomar decisiones.
 
 **Retos técnicos adicionales:**
 
--   Implementar vuelo autónomo del dron.
+-   Implementar vuelo autónomo del dron y la georreferenciación.
 -   Optimizar la duración de la batería para cubrir grandes áreas.
 -   Diseñar un sistema de retorno automático a la estación de carga.
 
@@ -27,7 +27,7 @@ Si el agente funciona correctamente, podría presentarse como proyecto de grado.
 
     ![HIVEMIND Drone System](misc/fotos_repo/hivemind.png)
 
--   **Extensión a otros cultivos:** Entrenar modelos para detectar enfermedades en bananos y otras plantaciones **(PREGUNTAR EN CLASE SI HAY DIFERENCIA ENTRE MODELOS/AGENTES)**.
+-   **Extensión a otros cultivos:** Entrenar modelos para detectar enfermedades en bananos y otras plantaciones.
 
     ![Enfermedades en cultivos](misc/fotos_repo/enfermedades.jpg)
 
@@ -37,10 +37,10 @@ Si el agente funciona correctamente, podría presentarse como proyecto de grado.
 2. El modelo analiza la imagen y detecta la roya.
 3. El sistema devuelve:
     - Imagen con las áreas afectadas resaltadas.
-    - Un porcentaje estimado de infección.
+    - Un nivel estimado de infección.
     - Recomendaciones preventivas y correctivas según el nivel de infección.
 
-![Ejemplo de detección de roya](misc/fotos_repo/ejemplo.jpg)
+![Ejemplo de detección de infección](misc/fotos_repo/ejemplo.jpg)
 
 _Nota:_ Se debe definir si las recomendaciones se presentan en un documento o directamente en la interfaz.
 
