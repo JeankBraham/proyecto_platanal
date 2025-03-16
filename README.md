@@ -1,4 +1,4 @@
-# Proyecto: Cafetal. Agente Computacional para Detección de Roya en Café
+# Proyecto: Platanal. Agente Computacional para Detección de Roya en Café
 
 Proyecto final para la materia de Conceptos Avanzados de Inteligencia Artificial (AY114).
 
