@@ -1,1 +1,0 @@
-Este dataset combina la sigatoka negra y la amarilla, así que quizás podría utilizarlo como testset, la cosa es que habría que buscar hojas sanas para el testset.
