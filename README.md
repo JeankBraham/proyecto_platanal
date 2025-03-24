@@ -64,3 +64,13 @@ _Nota:_ Se debe definir si las recomendaciones se presentan en un documento o di
     - Crear diapositivas para mostrar la idea, el código y los resultados.
 
 ---
+### Fuentes de Imágenes  
+Las imágenes utilizadas en este proyecto provienen de las siguientes fuentes:  
+
+1. [RoboFlow - Disease Dataset](https://universe.roboflow.com/jeff-works-agri/disease-olxt8)  
+2. [Kaggle - Banana Leaf Dataset](https://www.kaggle.com/datasets/kousikv22mcr055/banana-leaf-dataset)  
+3. [Kaggle - Banana Leaf Disease Dataset V4](https://www.kaggle.com/datasets/rayhanarlistya/banana-leaf-disease-dataset-v4)  
+4. [Kaggle - Banana Disease Recognition Dataset](https://www.kaggle.com/datasets/sujaykapadnis/banana-disease-recognition-dataset)  
+
+Estas fuentes proporcionan imágenes de hojas sanas y con diversas enfermedades (pero solo se usaron las imágenes de sigatoka negra), utilizadas para el entrenamiento y validación del modelo.
+
