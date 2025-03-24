@@ -64,7 +64,7 @@ _Nota:_ Se debe definir si las recomendaciones se presentan en un documento o di
     - Crear diapositivas para mostrar la idea, el código y los resultados.
 
 ---
-### Fuentes de Imágenes  
+### 📸 Fuentes de Imágenes  
 Las imágenes utilizadas en este proyecto provienen de las siguientes fuentes:  
 
 1. [RoboFlow - Disease Dataset](https://universe.roboflow.com/jeff-works-agri/disease-olxt8)  
