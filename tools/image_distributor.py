@@ -2,7 +2,7 @@ import os
 import shutil
 import random
 
-dataset_path = r"D:\Proyectos\Universidad\proyecto_platanal\dataset\training"
+dataset_path = r"D:\Proyectos\Universidad\proyecto_platanal\unorganized_dataset"
 output_path = r"D:\Proyectos\Universidad\proyecto_platanal\final_dataset"
 
 train_split = 0.7
@@ -10,7 +10,7 @@ val_split = 0.15
 test_split = 0.15
 
 for folder in ["training", "validation", "test"]:
-    for class_name in ["healthy_leaves", "black_sigatoka"]:
+    for class_name in ["healthy", "sigatoka"]:
         os.makedirs(os.path.join(output_path, folder, class_name), exist_ok=True)
 
 def split_data(class_name):
@@ -34,7 +34,7 @@ def split_data(class_name):
             dst = os.path.join(output_path, folder, class_name, img)
             shutil.copy(src, dst)
 
-for class_name in ["healthy_leaves", "black_sigatoka"]:
+for class_name in ["healthy", "sigatoka"]:
     split_data(class_name)
 
 print("📌 División de dataset completada correctamente.")
