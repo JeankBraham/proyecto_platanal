@@ -1,10 +1,10 @@
-# Proyecto: Platanal. Agente Computacional para Detección de Sigatoka Negra en el banano
+# Proyecto: Bananal. Agente Computacional para Detección de Sigatoka en el banano
 
 Proyecto final para la materia de Conceptos Avanzados de Inteligencia Artificial (AY114) de la Maestría en Inteligencia Artificial y Ciencia de Datos.
 
 ## 📌 Idea Principal
 
-El objetivo de este proyecto es desarrollar un agente computacional en Python (aunque se evaluará si sigue siendo la mejor opción en el futuro) que permita identificar la Sigatoka Negra en los bananales colombianos (y posiblemente del mundo). Se entrenará el modelo mediante el uso de redes neuronales profundas para el procesamiento de imágenes.
+El objetivo de este proyecto es desarrollar un agente computacional en Python (aunque se evaluará si sigue siendo la mejor opción en el futuro) que permita identificar la Sigatoka en los bananales colombianos (y posiblemente del mundo). Se entrenará el modelo mediante el uso de redes neuronales profundas para el procesamiento de imágenes.
 
 La aplicación inicial será una interfaz gráfica que permita al usuario:
 
