@@ -1,7 +1,6 @@
 import cv2
 import os
 import json
-import numpy as np
 
 def detect_leaf_bbox(image_path):
     # Cargar la imagen
