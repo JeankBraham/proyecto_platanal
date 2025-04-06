@@ -9,6 +9,5 @@ def count_images(route, extensions=("jpg", "jpeg")):
 dataset_dir = r"D:\Proyectos\Universidad\proyecto_platanal\unorganized_dataset"
 total = count_images(dataset_dir)
 print(f"Total de imágenes en '{dataset_dir}': {total}")
-print("Imágenes para entrenamiento (70%): " + str(int(total*0.7)))
-print("Imágenes para prueba (15%): " + str(int(total*0.15)))
-print("Imágenes para validación (15%): " + str(int(total*0.15)))
+print("Imágenes para entrenamiento (80%): " + str(int(total*0.8)))
+print("Imágenes para validación (20%): " + str(int(total*0.2)))
