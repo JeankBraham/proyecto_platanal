@@ -6,7 +6,7 @@ dataset_path = r"D:\Proyectos\Universidad\proyecto_platanal\unorganized_dataset"
 output_path = r"D:\Proyectos\Universidad\proyecto_platanal\final_dataset"
 
 train_split = 0.8
-val_split = 0.20
+val_split = 0.2
 
 for folder in ["training", "validation"]:
     for class_name in ["healthy", "sigatoka"]:
