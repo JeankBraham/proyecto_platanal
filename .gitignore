@@ -3,4 +3,4 @@ venv/
 __pycache__/
 .cache
 *.keras
-runs/detect/predict/
+runs/detect/
