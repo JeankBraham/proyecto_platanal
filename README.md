@@ -66,15 +66,33 @@ _Nota:_ Se debe definir si las recomendaciones se presentan en un documento o di
 
 ## ✅ Instrucciones de despliegue del proyecto
 
-### Prerrequisito: Tener Python 3.11.6. (no estoy seguro si funciona en versiones más recientes).
+### 📋 Prerrequisitos
 
-Para desplegar el proyecto de manera local se deben realizar los siguientes pasos:
+-   Tener instalado **Python 3.11.6**.  
+    _(Nota: No se ha probado en versiones más recientes, podría no funcionar correctamente.)_
 
-1. Clonar el repositorio en el equipo donde se ejecutará el proyecto.
+### 🚀 Pasos para desplegar el proyecto localmente
+
+1. **Clonar** este repositorio en tu equipo.
+
+    ```bash
+    git clone https://github.com/usuario/proyecto-sigatoka.git
+    ```
+
 2. Ubicarse en la carpeta del proyecto.
-3. Instalar las librerías requeridas (ya sea de manera local o en un entorno virtual) usando el comando: pip install -r requirements.txt
-4. El modelo entrenado no está en el repositorio así que hay que comenzar el proceso de entrenamiento usando el siguiente comando en la terminal: yolo task=detect mode=train model=yolov8s.pt data="[DIRECCIÓN DE LA CARPETA DEL PROYECTO]/proyecto\*platanal/data.yaml" epochs=60 imgsz=640 batch=16. Este comando entrenará el modelo usando o CPU de manera predeterminada o GPU (en caso de tener una tarjeta gráfica compatible).
-   Nota: El entrenamiento usando CPU se demora mucho más que con GPU. En caso de querer reducir el tiempo de entrenamiento hay que reducir el número de epochs pero esto puede afectar el rendimiento del agente computacional.
+    ```bash
+    cd proyecto-sigatoka
+    ```
+3. **Instalar las librerías requeridas** (ya sea de manera local o en un entorno virtual) usando el comando:
+    ```bash
+    pip install -r requirements.txt
+    ```
+4. **Entrenar el modelo**: El modelo entrenado no está en el repositorio así que hay que comenzar el proceso de entrenamiento usando el siguiente comando en la terminal:
+    ```bash
+    yolo task=detect mode=train model=yolov8s.pt data="[DIRECCIÓN DE LA CARPETA DEL PROYECTO]/proyecto\*platanal/data.yaml" epochs=60 imgsz=640 batch=16
+    ```
+    Este comando entrenará el modelo usando o CPU de manera predeterminada o GPU (en caso de tener una tarjeta gráfica compatible).
+    Nota: El entrenamiento usando CPU se demora mucho más que con GPU. En caso de querer reducir el tiempo de entrenamiento hay que reducir el número de epochs pero esto puede afectar el rendimiento del agente computacional.
 5. Una vez haya sido entrenado el agente, quedará guardado en la carpeta runs/detect/train/weights/best.pt. Para ejecutarlo hay que usar el comando: yolo task=detect mode=predict model=runs/detect/train/weights/best.pt source=0. Esto activará la cámara y comenzará a detectar objetos.
 
 ## 🧰 Herramientas utilizadas
