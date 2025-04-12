@@ -95,7 +95,7 @@ _Nota:_ Se debe definir si las recomendaciones se presentan en un documento o di
     Nota: El entrenamiento usando CPU se demora mucho más que con GPU. En caso de querer reducir el tiempo de entrenamiento hay que reducir el número de epochs pero esto puede afectar el rendimiento del agente computacional.
 5. Una vez haya sido entrenado el agente, quedará guardado en la carpeta runs/detect/train/weights/best.pt. Para ejecutarlo hay que usar el comando:
     ```bash
-    yolo task=detect mode=predict model=runs/detect/train/weights/best.pt source=0.
+    yolo task=detect mode=predict model=runs/detect/train/weights/best.pt source=0 show=True.
     ```
     Esto activará la cámara y comenzará a detectar objetos. También se puede hacer lo mismo con imágenes solo que no ha sido probado:
     ```bash
