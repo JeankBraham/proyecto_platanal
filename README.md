@@ -93,7 +93,14 @@ _Nota:_ Se debe definir si las recomendaciones se presentan en un documento o di
     ```
     Este comando entrenará el modelo usando o CPU de manera predeterminada o GPU (en caso de tener una tarjeta gráfica compatible).
     Nota: El entrenamiento usando CPU se demora mucho más que con GPU. En caso de querer reducir el tiempo de entrenamiento hay que reducir el número de epochs pero esto puede afectar el rendimiento del agente computacional.
-5. Una vez haya sido entrenado el agente, quedará guardado en la carpeta runs/detect/train/weights/best.pt. Para ejecutarlo hay que usar el comando: yolo task=detect mode=predict model=runs/detect/train/weights/best.pt source=0. Esto activará la cámara y comenzará a detectar objetos.
+5. Una vez haya sido entrenado el agente, quedará guardado en la carpeta runs/detect/train/weights/best.pt. Para ejecutarlo hay que usar el comando:
+    ```bash
+    yolo task=detect mode=predict model=runs/detect/train/weights/best.pt source=0.
+    ```
+    Esto activará la cámara y comenzará a detectar objetos. También se puede hacer lo mismo con imágenes solo que no ha sido probado:
+    ```bash
+    yolo detect predict model=runs/detect/train/weights/best.pt source=tu_carpeta_de_imagenes show=True
+    ```
 
 ## 🧰 Herramientas utilizadas
 
