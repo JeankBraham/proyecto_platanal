@@ -1,7 +1,7 @@
 # Proyecto: Bananal. Agente Computacional para Detección de Sigatoka en el banano
 
 Proyecto final para la materia de Conceptos Avanzados de Inteligencia Artificial (AY114) de la Maestría en Inteligencia Artificial y Ciencia de Datos.
-[Guía de despliegue del proyecto](#Instrucciones-de-despliegue-del-proyecto)
+[Guía de despliegue del proyecto](#✅-Instrucciones-de-despliegue-del-proyecto)
 
 ## 📌 Idea Principal
 
