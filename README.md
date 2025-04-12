@@ -76,7 +76,7 @@ _Nota:_ Se debe definir si las recomendaciones se presentan en un documento o di
 1. **Clonar** este repositorio en tu equipo.
 
     ```bash
-    git clone https://github.com/usuario/proyecto-sigatoka.git
+    git clone https://github.com/JeankBraham/proyecto-sigatoka.git
     ```
 
 2. Ubicarse en la carpeta del proyecto.
@@ -87,7 +87,7 @@ _Nota:_ Se debe definir si las recomendaciones se presentan en un documento o di
     ```bash
     pip install -r requirements.txt
     ```
-4. **Entrenar el modelo**: El modelo entrenado no está en el repositorio así que hay que comenzar el proceso de entrenamiento usando el siguiente comando en la terminal:
+4. **Entrenar el modelo**: El modelo entrenado ya está en el repositorio, pero si quieres entrenarlo hay que eliminar la carpeta runs y comenzar el proceso de entrenamiento usando el siguiente comando en la terminal:
     ```bash
     yolo task=detect mode=train model=yolov8s.pt data="[DIRECCIÓN DE LA CARPETA DEL PROYECTO]/proyecto\*platanal/data.yaml" epochs=60 imgsz=640 batch=16
     ```
