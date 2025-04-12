@@ -76,12 +76,12 @@ _Nota:_ Se debe definir si las recomendaciones se presentan en un documento o di
 1. **Clonar** este repositorio en tu equipo.
 
     ```bash
-    git clone https://github.com/JeankBraham/proyecto-sigatoka.git
+    git clone https://github.com/JeankBraham/proyecto-platanal.git
     ```
 
 2. Ubicarse en la carpeta del proyecto.
     ```bash
-    cd proyecto-sigatoka
+    cd proyecto-platanal
     ```
 3. **Instalar las librerías requeridas** (ya sea de manera local o en un entorno virtual) usando el comando:
     ```bash
@@ -89,7 +89,7 @@ _Nota:_ Se debe definir si las recomendaciones se presentan en un documento o di
     ```
 4. **Entrenar el modelo**: El modelo entrenado ya está en el repositorio, pero si quieres entrenarlo hay que eliminar la carpeta runs y comenzar el proceso de entrenamiento usando el siguiente comando en la terminal:
     ```bash
-    yolo task=detect mode=train model=yolov8s.pt data="[DIRECCIÓN DE LA CARPETA DEL PROYECTO]/proyecto\*platanal/data.yaml" epochs=60 imgsz=640 batch=16
+    yolo task=detect mode=train model=yolov8s.pt data="[DIRECCIÓN DE LA CARPETA DEL PROYECTO]/proyecto-platanal/data.yaml" epochs=60 imgsz=640 batch=16
     ```
     Este comando entrenará el modelo usando o CPU de manera predeterminada o GPU (en caso de tener una tarjeta gráfica compatible).
     Nota: El entrenamiento usando CPU se demora mucho más que con GPU. En caso de querer reducir el tiempo de entrenamiento hay que reducir el número de epochs pero esto puede afectar el rendimiento del agente computacional.
