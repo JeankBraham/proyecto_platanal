@@ -57,7 +57,7 @@ history = model.fit(train_dataset, epochs=30, validation_data=val_dataset, callb
 # Evaluación del modelo en el dataset de prueba
 print("📊 Inicialización de la prueba del agente:")
 test_loss, test_acc = model.evaluate(test_dataset)
-print(f"\n🔹 Precisión en el set de prueba: {test_acc:.2f}")
+print(f"\n🔹 Precisión en el set de prueba: {test_acc * 100:.2f}%")
 
 # Guardado del modelo
 model.save("agente_clasificador_sigatoka.keras")
