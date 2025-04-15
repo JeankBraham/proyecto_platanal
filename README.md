@@ -89,10 +89,10 @@ _Nota:_ Se debe definir si las recomendaciones se presentan en un documento o di
     ```
 4. **Entrenar el modelo**: El modelo entrenado ya está en el repositorio, pero si quieres entrenarlo hay que eliminar la carpeta runs y comenzar el proceso de entrenamiento usando el siguiente comando en la terminal:
     ```bash
-    yolo task=detect mode=train model=yolov8s.pt data="[DIRECCIÓN DE LA CARPETA DEL PROYECTO]/proyecto-platanal/data.yaml" epochs=60 imgsz=640 batch=16
+    yolo task=detect mode=train model=yolov8s.pt data="[DIRECCIÓN DE LA CARPETA DEL PROYECTO]/proyecto-platanal/data.yaml" epochs=60 imgsz=640 batch=16 workers=8
     ```
-    Este comando entrenará el modelo usando o CPU de manera predeterminada o GPU (en caso de tener una tarjeta gráfica compatible).
-    Nota: El entrenamiento usando CPU se demora mucho más que con GPU. En caso de querer reducir el tiempo de entrenamiento hay que reducir el número de epochs pero esto puede afectar el rendimiento del agente computacional.
+    Este comando entrenará el modelo usando o CPU de manera predeterminada o con GPU (en caso de tener una tarjeta gráfica compatible).
+    Nota: El entrenamiento usando CPU se demora mucho más que con GPU. En caso de querer reducir el tiempo de entrenamiento hay que reducir el número de epochs pero esto puede afectar el rendimiento del agente computacional. Otro aspecto a considerar es la cantidad de "workers", se recomienda usar el 75% de los hilos disponibles del procesador. Con esto bajé de 7.7 horas de entrenamiento (3:30 promedio por epoch) a 2.5 horas (1:30 promedio por epoch) usando workers=8.
 5. Una vez haya sido entrenado el agente, quedará guardado en la carpeta runs/detect/train/weights/best.pt. Para ejecutarlo hay que usar el comando:
     ```bash
     yolo task=detect mode=predict model=runs/detect/train/weights/best.pt source=0 show=True.
