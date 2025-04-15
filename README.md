@@ -1,6 +1,6 @@
 # Proyecto: Bananal. Agente Computacional para Detección de Sigatoka en el banano
 
-Proyecto final para la materia de Conceptos Avanzados de Inteligencia Artificial (AY114) de la Maestría en Inteligencia Artificial y Ciencia de Datos.
+Proyecto final para la materia de Conceptos Avanzados de Inteligencia Artificial (AY114) de la Maestría en Inteligencia Artificial y Ciencia de Datos. [Guía de despliegue del proyecto al final](#instrucciones-de-despliegue-del-proyecto)
 
 ## 📌 Idea Principal
 
@@ -97,8 +97,5 @@ _Nota:_ Se debe definir si las recomendaciones se presentan en un documento o di
     streamlit run .\app.py
     ```
     Esto abrirá una interfaz web que nos permitirá subir una imagen o usar la cámara para tomar una foto.
-    ```
-
-    ```
 
 ---
