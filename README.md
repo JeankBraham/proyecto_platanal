@@ -63,4 +63,42 @@ _Nota:_ Se debe definir si las recomendaciones se presentan en un documento o di
     - Mejorar la presentación de Notion.
     - Crear diapositivas para mostrar la idea, el código y los resultados.
 
+## ✅ Instrucciones de despliegue del proyecto
+
+### 📋 Prerrequisitos
+
+-   Tener instalado **Python 3.11.6**.  
+    _(Nota: No se ha probado en versiones más recientes, podría no funcionar correctamente.)_
+
+### 🚀 Pasos para desplegar el proyecto localmente
+
+1. **Clonar** este repositorio en tu equipo.
+
+    ```bash
+    git clone https://github.com/JeankBraham/proyecto-platanal.git
+    ```
+
+2. Ubicarse en la carpeta del proyecto.
+    ```bash
+    cd proyecto-platanal
+    ```
+3. **Instalar las librerías requeridas** (ya sea de manera local o en un entorno virtual) usando el comando:
+    ```bash
+    pip install -r requirements.txt
+    ```
+4. **Entrenar el modelo**: El modelo entrenado no está en el repositorio, para comenzar el proceso de entrenamiento hay que ejecutar el siguiente comando en la terminal:
+    ```bash
+    python .\image_classification_training.py
+    ```
+    Este comando entrenará el modelo usando o CPU de manera predeterminada.
+    Nota: El entrenamiento usando CPU se demora mucho más que con GPU. En caso de querer reducir el tiempo de entrenamiento hay que reducir el número de epochs pero esto puede afectar el rendimiento del agente computacional.
+5. Una vez haya sido entrenado el agente, quedará guardado en la carpeta el proyecto como agente_clasificador_sigatoka.keras. Para ejecutarlo hay que usar el comando:
+    ```bash
+    streamlit run .\app.py
+    ```
+    Esto abrirá una interfaz web que nos permitirá subir una imagen o usar la cámara para tomar una foto.
+    ```
+
+    ```
+
 ---
